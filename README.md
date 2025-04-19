@@ -49,13 +49,13 @@ conda create -n LVSM python=3.11
 conda activate LVSM
 pip install -r requirements.txt
 ```
-
+As we used [xformers](https://github.com/facebookresearch/xformers) `memory_efficient_attention`, the GPU device compute capability needs > 8.0. Otherwise, it would pop up an error. Check your GPU compute capability in [CUDA GPUs Page](https://developer.nvidia.com/cuda-gpus#compute).
 
 ### Data
 Download the RealEstate10K dataset from [this link](http://schadenfreude.csail.mit.edu:8000/), which is provided by [pixelSplat](https://github.com/dcharatan/pixelsplat), and put the data in `YOUR_RAW_DATAPATH`.
 Run the following command to preprocess the data into our format.
 ```bash
-python preprocess_data.py --base_path YOUR_RAW_DATAPATH --output_dir YOUR_PROCESSED_DATAPATH --mode ['train' or 'test']
+python process_data.py --base_path YOUR_RAW_DATAPATH --output_dir YOUR_PROCESSED_DATAPATH --mode ['train' or 'test']
 ```
 
 ### Checkpoints
