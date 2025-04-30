@@ -63,10 +63,10 @@ The scene-level evaluation is conducted on the [RealEstate10K](http://schadenfre
 
 | Model | PSNR  | SSIM  | LPIPS |
 | ----- | ----- | ----- | ----- |
-| [LVSM Decoder-Only Scene-Level res256*256 (full)](https://huggingface.co/coast01/LVSM/resolve/main/scene_decoder_only_256.pt?download=true) | 29.67 | 0.906 | 0.098 |
-| [LVSM Encoder-Decoder Scene-Level res256*256 (full)](https://huggingface.co/coast01/LVSM/resolve/main/scene_encoder_decoder_256.pt?download=true) | 28.60 | 0.893 | 0.114 |
-| [LVSM Decoder-Only Scene-Level res512*512](https://huggingface.co/coast01/LVSM/blob/main/lvsm_scene_decoder_only_res512.pt) | N/A | N/A | N/A |
-| [LVSM Encoder-Decoder Scene-Level res512*512](https://huggingface.co/coast01/LVSM/blob/main/lvsm_scene_encoder_decoder_res512.pt) | N/A | N/A | N/A |
+| [LVSM Decoder-Only Scene-Level res256×256 (full)](https://huggingface.co/coast01/LVSM/resolve/main/scene_decoder_only_256.pt?download=true) | 29.67 | 0.906 | 0.098 |
+| [LVSM Encoder-Decoder Scene-Level res256×256 (full)](https://huggingface.co/coast01/LVSM/resolve/main/scene_encoder_decoder_256.pt?download=true) | 28.60 | 0.893 | 0.114 |
+| [LVSM Decoder-Only Scene-Level res512×512](https://huggingface.co/coast01/LVSM/blob/main/lvsm_scene_decoder_only_res512.pt) | N/A | N/A | N/A |
+| [LVSM Encoder-Decoder Scene-Level res512×512](https://huggingface.co/coast01/LVSM/blob/main/lvsm_scene_encoder_decoder_res512.pt) | N/A | N/A | N/A |
 
 As we discussed in the limitation sections of this paper:
 
@@ -74,7 +74,7 @@ As we discussed in the limitation sections of this paper:
 
 Therefore, if you plan to use the model for inference at resolutions or aspect ratios different from those used to train our provided checkpoints (256×256 or 512×512), we recommend fine-tuning the model for the specific resolution and aspect ratio.
 
-```bash
+
 
 ## 2. Training
 
