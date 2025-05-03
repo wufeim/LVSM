@@ -1,3 +1,5 @@
+# Copyright (c) 2025 Haian Jin. Created for the LVSM project (ICLR 2025).
+
 import torch
 from transformers import (
     get_constant_schedule_with_warmup,

@@ -1,3 +1,6 @@
+# Copyright (c) 2025 Haian Jin. Created for the LVSM project (ICLR 2025).
+
+
 from omegaconf import OmegaConf
 import argparse
 from easydict import EasyDict as edict

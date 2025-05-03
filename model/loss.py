@@ -1,3 +1,5 @@
+# Copyright (c) 2025 Haian Jin. Created for the LVSM project (ICLR 2025).
+
 import lpips
 import torch.nn as nn
 import torch
