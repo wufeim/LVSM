@@ -117,7 +117,7 @@ class Images2LatentScene(nn.Module):
                     weight_init_std = 0.02 / (2 * (idx + 1)) ** 0.5
                 else:
                     weight_init_std = 0.02 / (2 * config.decoder_n_layer) ** 0.5
-            block.apply(lambda module: init_weights(module, weight_init_std))  
+                block.apply(lambda module: init_weights(module, weight_init_std))  
         else:
             # Encoder
             for block in self.transformer_encoder:
